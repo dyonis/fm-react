@@ -1,0 +1,15 @@
+services:
+  fm_node:
+    container_name: fm_node
+    build:
+      context: ./docker/node
+    volumes:
+      - .:/var/www
+    networks:
+      - fm-network
+    ports:
+      - 3000:3000
+
+networks:
+  fm-network:
+    driver: bridge
