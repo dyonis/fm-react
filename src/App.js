@@ -1,11 +1,9 @@
-import './style/App.scss';
-import './components/Widget/Widget.scss';
-import './components/Button/Button.scss';
+import './Style/App.scss';
 import AppRouter from "./Router";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" data-bs-theme="dark">
             <AppRouter />
         </div>
     );

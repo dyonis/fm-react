@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Tabs from "../components/Tabs/Tabs";
+import NavbarBottom from "./NavbarBottom";
 
 const Layout = () => {
     return (
         <>
-            <header className="App-header">
-                <Tabs />
-            </header>
-
             <Outlet />
+
+            <footer>
+                <NavbarBottom />
+            </footer>
         </>
     )
 };
